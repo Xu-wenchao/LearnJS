@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<canvas id="drawing"></canvas>
+	</body>
+	<script type="text/javascript" src="js/collision_alog.js"></script>
+	<script type="text/javascript">
+		var drawing = document.getElementById('drawing');
+		drawing.width = 700;
+		drawing.height = 500;
+		if(drawing.getContext){
+			Collision.init(drawing.width, drawing.height);
+			Collision.run(drawing);
+		}
+	</script>
+</html> 
